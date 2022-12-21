@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="399.0" prefWidth="970.0" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="background" fitHeight="682.0" fitWidth="1098.0" layoutX="-28.0" layoutY="-16.0" opacity="0.69" />
+      <TableView fx:id="tbl" layoutX="31.0" layoutY="72.0" opacity="0.85" prefHeight="244.0" prefWidth="907.0">
+        <columns>
+          <TableColumn fx:id="tbl_fname" prefWidth="104.0" text="first name" />
+          <TableColumn fx:id="tbl_lname" prefWidth="105.0" text="last name" />
+          <TableColumn fx:id="tbl_id" prefWidth="91.0" text="id" />
+          <TableColumn fx:id="tbl_phone" prefWidth="137.0" text="phone number" />
+          <TableColumn fx:id="tbl_email" prefWidth="127.0" text="email address" />
+          <TableColumn fx:id="tbl_credit" minWidth="0.0" prefWidth="158.0" text="credit card number" />
+          <TableColumn fx:id="tbl_sub" prefWidth="184.0" text="subscriber number" />
+        </columns>
+      </TableView>
+      <Button fx:id="updtBtn" layoutX="860.0" layoutY="325.0" mnemonicParsing="false" onAction="#getUpdtBtn" text="Update" />
+      <Button fx:id="exitBtn" layoutX="871.0" layoutY="360.0" mnemonicParsing="false" onAction="#getExitBtn" text="Exit" />
+      <TextArea fx:id="messageToGUI" editable="false" layoutX="132.0" layoutY="338.0" prefHeight="48.0" prefWidth="706.0" />
+      <TextField fx:id="Ip_Field" layoutX="82.0" layoutY="24.0" text="localhost" />
+      <Button fx:id="connectBtn" layoutX="537.0" layoutY="24.0" mnemonicParsing="false" onAction="#getConnectBtn" text="Connect" />
+      <Label layoutX="52.0" layoutY="23.0" prefHeight="30.0" prefWidth="30.0" text="IP:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="283.0" layoutY="23.0" prefHeight="30.0" prefWidth="50.0" text="Port:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="Port_field" layoutX="333.0" layoutY="24.0" text="5555" />
+      <Label layoutX="32.0" layoutY="345.0" prefHeight="27.0" prefWidth="77.0" text="Console:">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
